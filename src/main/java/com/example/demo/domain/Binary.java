@@ -1,10 +1,9 @@
-package com.example.demo.model;
+package com.example.demo.domain;
 
-public class Decimal implements Numeric{
-
+public class Binary implements Numeric{
     private final String value;
 
-    public Decimal(String value) {
+    public Binary(String value) {
         // TODO: validate input
         this.value = value;
     }

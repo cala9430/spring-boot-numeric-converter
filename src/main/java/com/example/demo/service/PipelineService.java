@@ -1,6 +1,6 @@
 package com.example.demo.service;
 
-import com.example.demo.model.*;
+import com.example.demo.domain.*;
 import com.example.demo.service.converter.*;
 import com.example.demo.service.pipeline.Pipeline;
 import com.example.demo.service.pipeline.PipelineBuilder;
@@ -26,7 +26,7 @@ public class PipelineService {
                 .build());
 
         // Hexadecimal to Decimal
-        pipelines.put(new Pair<>(Hexadecimal.class, NumerationType.DECIMAL), PipelineBuilder
+        pipelines.put(new Pair<>(Hexadecimal.class, NumerationType.DEC), PipelineBuilder
                 .create(new HexDecimalConverter())
                 .build());
 
@@ -36,23 +36,23 @@ public class PipelineService {
                 .build());
 
         // Binary to Decimal
-        pipelines.put(new Pair<>(Binary.class, NumerationType.DECIMAL), PipelineBuilder
+        pipelines.put(new Pair<>(Binary.class, NumerationType.DEC), PipelineBuilder
                 .create(new BinaryDecimalConverter())
                 .build());
 
         // Decimal to Roman
-        pipelines.put(new Pair<>(Decimal.class, NumerationType.ROMAN), PipelineBuilder
+        pipelines.put(new Pair<>(Decimal.class, NumerationType.ROM), PipelineBuilder
                 .create(new DecimalRomanConverter())
                 .build());
 
         // Hexadecimal to Roman
-        pipelines.put(new Pair<>(Hexadecimal.class, NumerationType.ROMAN), PipelineBuilder
+        pipelines.put(new Pair<>(Hexadecimal.class, NumerationType.ROM), PipelineBuilder
                 .create(new HexDecimalConverter())
                 .add(new DecimalRomanConverter())
                 .build());
 
         // Binary to Roman
-        pipelines.put(new Pair<>(Binary.class, NumerationType.ROMAN), PipelineBuilder
+        pipelines.put(new Pair<>(Binary.class, NumerationType.ROM), PipelineBuilder
                 .create(new BinaryDecimalConverter())
                 .add(new DecimalRomanConverter())
                 .build());

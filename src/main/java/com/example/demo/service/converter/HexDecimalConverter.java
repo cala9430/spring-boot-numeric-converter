@@ -1,7 +1,8 @@
 package com.example.demo.service.converter;
 
-import com.example.demo.model.Decimal;
-import com.example.demo.model.Hexadecimal;
+
+import com.example.demo.domain.Decimal;
+import com.example.demo.domain.Hexadecimal;
 
 public class HexDecimalConverter implements Converter<Hexadecimal, Decimal> {
 

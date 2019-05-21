@@ -1,9 +1,9 @@
-package com.example.demo.model;
+package com.example.demo.domain;
 
-public class Binary implements Numeric{
+public class Hexadecimal implements Numeric{
     private final String value;
 
-    public Binary(String value) {
+    public Hexadecimal(String value) {
         // TODO: validate input
         this.value = value;
     }

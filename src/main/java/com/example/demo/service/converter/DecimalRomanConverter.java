@@ -1,7 +1,7 @@
 package com.example.demo.service.converter;
 
-import com.example.demo.model.Decimal;
-import com.example.demo.model.Roman;
+import com.example.demo.domain.Decimal;
+import com.example.demo.domain.Roman;
 import org.springframework.stereotype.Service;
 
 @Service

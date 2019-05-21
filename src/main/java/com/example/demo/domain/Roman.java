@@ -1,4 +1,4 @@
-package com.example.demo.model;
+package com.example.demo.domain;
 
 public class Roman implements Numeric{
     private final String value;

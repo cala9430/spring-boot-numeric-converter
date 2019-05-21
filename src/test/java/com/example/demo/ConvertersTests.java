@@ -1,9 +1,9 @@
 package com.example.demo;
 
-import com.example.demo.model.Binary;
-import com.example.demo.model.Decimal;
-import com.example.demo.model.Hexadecimal;
-import com.example.demo.model.Roman;
+import com.example.demo.domain.Binary;
+import com.example.demo.domain.Decimal;
+import com.example.demo.domain.Hexadecimal;
+import com.example.demo.domain.Roman;
 import com.example.demo.service.converter.*;
 import org.junit.Assert;
 import org.junit.Test;

@@ -3,7 +3,7 @@ package com.example.demo.service;
 import com.example.demo.api.TranslationRequest;
 import com.example.demo.api.TranslationResponse;
 import com.example.demo.api.TranslationResultResponse;
-import com.example.demo.model.*;
+import com.example.demo.domain.*;
 import com.example.demo.service.pipeline.Pipeline;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

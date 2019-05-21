@@ -1,9 +1,10 @@
-package com.example.demo.model;
+package com.example.demo.domain;
 
-public class Hexadecimal implements Numeric{
+public class Decimal implements Numeric{
+
     private final String value;
 
-    public Hexadecimal(String value) {
+    public Decimal(String value) {
         // TODO: validate input
         this.value = value;
     }
